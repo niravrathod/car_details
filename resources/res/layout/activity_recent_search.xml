@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/cmp_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_recent_search_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+        <TextView android:id="@c1487a/tv_recent_search_text" android:background="@c2101a/gray_light_2" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_searches"/>
+        <ListView android:id="@c1487a/lv_recent_searches" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@c1487a/rl_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/text_size_medium_1" android:gravity="center" android:id="@c1487a/tv_placeholder" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_search_placholder" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/text_size_medium_1" android:textColor="?attr/colorPrimary" android:id="@c1487a/tv_launch_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_now" android:layout_below="@c1487a/tv_placeholder" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="SMART_BANNER" app:adUnitId="@string/recent_searches_banner_ad_unit_id"/>
+</LinearLayout>

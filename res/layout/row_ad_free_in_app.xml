@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@+id/tv_ad_free_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go ad free" />
+    <TextView android:layout_gravity="center" android:id="@+id/tv_ad_free_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seamless exp for 6 months" />
+    <Button android:layout_gravity="center" android:id="@+id/btn_ad_free_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buy" />
+</LinearLayout>

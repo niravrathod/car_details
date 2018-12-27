@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:tag="layout/row_home_rail_collection_0" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@+id/album_rail_title" android:tag="binding_1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/rail_title" />
+    <TextView android:gravity="center" android:id="@+id/tv_seeAll" android:tag="binding_2" android:text="See All" app:layout_constraintBottom_toBottomOf="@+id/album_rail_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/album_rail_title" style="@style/tv_seeAll" />
+    <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@+id/albumListView" android:tag="binding_3" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:layoutManager="android.support.v7.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/album_rail_title" app:reverseLayout="false" />
+</android.support.constraint.ConstraintLayout>

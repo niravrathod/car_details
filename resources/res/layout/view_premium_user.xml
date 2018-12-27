@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/drawable_rounded_corner" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp">
+    <android.support.v7.widget.AppCompatImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:id="@c1487a/tv_premium_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/premium_user_text"/>
+</LinearLayout>

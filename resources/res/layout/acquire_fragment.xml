@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/list_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@c1107c/loading_indicator"/>
+    <android.support.v7.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:background="@color/primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" style="@c1109e/ToolbarStyle"/>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/error_textview" android:padding="@c1105a/single_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView android:gravity="center" android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
+</FrameLayout>

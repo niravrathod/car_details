@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/toolbar" layout="@layout/cmp_toolbar" />
+    <LinearLayout android:orientation="vertical" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:layout_weight="1">
+            <TextView android:textColor="@color/gray_darker" android:id="@+id/tv_vehicle_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_vehicle_num" android:textAllCaps="true" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/background_black_rounded_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <View android:layout_gravity="center_vertical" android:background="@drawable/drawable_black_dot" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="6dp" />
+                <TextView android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/tv_hologram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:text="IND" android:drawableTop="@drawable/ic_hologram" />
+                <EditText android:textSize="@dimen/text_size_large_3" android:textStyle="bold" android:textColor="@android:color/black" android:textColorHint="@color/hint_color" android:id="@+id/et_vehicle_number" android:background="@null" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:hint="DL 1CA 8010" android:singleLine="true" android:inputType="textVisiblePassword" android:imeOptions="actionSearch" android:textAllCaps="true" android:fontFamily="sans-serif-light" />
+                <View android:layout_gravity="center_vertical" android:background="@drawable/drawable_black_dot" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginRight="6dp" />
+            </LinearLayout>
+            <android.support.design.widget.FloatingActionButton android:id="@+id/fab_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" android:src="@drawable/ic_mag" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView android:id="@+id/cv_my_garae" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60dp" android:layout_marginLeft="@dimen/padding_standard" android:layout_marginRight="@dimen/padding_standard" android:layout_marginBottom="@dimen/padding_standard" style="@style/AppTheme.CardView">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@+id/tv_my_garage" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/my_garage_text" android:drawablePadding="8dp" android:layout_weight="1" android:drawableStart="@drawable/ic_home_garage" android:paddingStart="10dp" android:layout_marginStart="10dp" />
+                <android.support.v7.widget.AppCompatImageView android:padding="10dp" android:layout_width="@dimen/default_margin_4" android:layout_height="@dimen/default_margin_4" android:src="@drawable/ic_right_arrow_angle" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:textSize="14sp" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/india_text" android:drawableLeft="@drawable/flag" android:drawablePadding="15dp" android:layout_centerHorizontal="true" />
+        <com.google.android.gms.ads.AdView android:id="@+id/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/search_screen_banner_new" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="fill_parent" android:layout_height="?attr/actionBarSize" app:theme="@style/CustomTheme.Toolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout android:id="@+id/fl_web_view_container" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="@string/webview_banner_ad_unit_id" />
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c1487a/rv" android:tag="layout/fragment_related_list_0" android:background="@c2101a/white" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>

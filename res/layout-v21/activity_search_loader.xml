@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loader_con" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders android:id="@+id/cfl_progress" android:layout_width="220dp" android:layout_height="220dp" android:layout_margin="10dp" android:src="@drawable/ic_loader_logo" app:cfl_border="true" app:cfl_border_width="5dp" app:cfl_wave_amplitude="0.04" app:cfl_wave_color="?attr/colorAccent" />
+        <TextView android:textSize="20sp" android:textColor="?attr/colorAccent" android:id="@+id/tv_loader_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/loader_text1" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_smart_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/webViewCon" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="fill_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:theme="@style/CustomTheme.Toolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <com.cuvora.carinfo.views.ScrapeView android:id="@+id/scrapeView" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" />
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adViewInner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="@string/webview_banner_ad_unit_id" />
+    </LinearLayout>
+</FrameLayout>

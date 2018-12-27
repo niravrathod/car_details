@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@+id/rl_variant_color" android:layout_width="60dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/variantColorImageView" android:background="@drawable/car_color_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/variantColorTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/variantColorImageView" />
+    <ImageView android:id="@+id/variantColorSmallImageView" android:background="@drawable/car_colors_small_circular_drawable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_toRightOf="@+id/variantColorImageView" />
+</RelativeLayout>

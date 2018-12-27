@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_app_header_view_all" />
+    <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rv_data" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/activity_home_margin" android:paddingEnd="@dimen/activity_home_margin" />
+</LinearLayout>

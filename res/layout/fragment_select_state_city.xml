@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <ExpandableListView android:id="@+id/lv_states" android:layout_width="fill_parent" android:layout_height="0dp" android:groupIndicator="@null" android:childDivider="@color/gray_medium" android:divider="@color/gray_medium_dark" android:dividerHeight="1dp" android:layout_weight="1" />
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" ads:adSize="BANNER" ads:adUnitId="@string/fuel_city_banner_ad_unit" />
+</LinearLayout>

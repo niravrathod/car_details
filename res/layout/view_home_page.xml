@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@+id/recyclerView" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/homepage_banner_ad_unit_id" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/view_root" android:background="@color/ad_free_back_dim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.cuvora.carinfo.views.AdFreeOptionsView android:id="@+id/adFreeOptionsView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

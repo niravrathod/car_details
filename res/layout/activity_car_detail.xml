@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cuvora.carinfo.helpers.ProgressLinearLayout android:orientation="vertical" android:id="@+id/progressActivity" android:layout_width="fill_parent" android:layout_height="fill_parent" progressActivity:errorButtonBackgroundColor="@color/colorPrimary" progressActivity:loadingBackgroundColor="#FFFFFF" progressActivity:loadingProgressBarColor="@color/colorPrimary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:progressActivity="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/cmp_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ScrollView android:id="@+id/variantActivityScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@+id/viewpagerWrapper" android:layout_width="0dp" android:layout_height="0dp">
+                            <android.support.v4.view.ViewPager android:id="@+id/vp_image_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" progressActivity:layout_scrollFlags="scroll" />
+                            <android.support.design.widget.TabLayout android:layout_gravity="bottom" android:id="@+id/tb_banner_indicators" android:layout_width="fill_parent" android:layout_height="10dp" android:layout_marginBottom="15dp" progressActivity:tabBackground="@drawable/selector_image_slider_tab_layout" progressActivity:tabGravity="center" progressActivity:tabIndicatorHeight="0dp" progressActivity:tabMaxWidth="15dp" />
+                        </FrameLayout>
+                        <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="1dp" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80dp">
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1">
+                                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/variant_act_margin">
+                                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maker" />
+                                    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/makerNameVariantActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textAllCaps="true" android:layout_marginEnd="6dp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View android:layout_gravity="center" android:background="@android:color/black" android:layout_width="1dp" android:layout_height="fill_parent" />
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1">
+                                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/variant_act_margin">
+                                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/priceLabelVariantActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price" />
+                                    <TextView android:textSize="18sp" android:textColor="@android:color/black" android:id="@+id/priceVariantActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/priceLabelVariantActivity" android:textAllCaps="true" />
+                                    <TextView android:textColor="@android:color/black" android:id="@+id/priceSuffixVariantActivity" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/priceVariantActivity" android:layout_alignBaseline="@+id/priceVariantActivity" android:layout_toEndOf="@+id/priceVariantActivity" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="1dp" />
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/colorsLabelVariantActivity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Colors" android:layout_marginStart="@dimen/variant_act_margin" />
+                        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_variant_colors" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15dp" android:overScrollMode="never" />
+                        <View android:id="@+id/colorDividerVariantActivity" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1dp" android:layout_marginTop="20dp" />
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/mileageLabelVariantActivity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Mileage" android:layout_marginStart="@dimen/variant_act_margin" />
+                        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@+id/variantMileageRecyclerView" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15dp" android:overScrollMode="never" />
+                        <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/variants" android:layout_marginStart="@dimen/variant_act_margin" />
+                        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@+id/rv_variant_version" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:overScrollMode="never" />
+                    </LinearLayout>
+                    <android.support.design.widget.FloatingActionButton android:id="@+id/shareButtonVariantsActivity" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/path" android:scaleType="centerCrop" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" progressActivity:backgroundTint="@color/colorPrimary" progressActivity:elevation="6dp" progressActivity:fabSize="normal" progressActivity:pressedTranslationZ="12dp" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" progressActivity:adSize="SMART_BANNER" progressActivity:adUnitId="@string/car_variants_versions_screen_banner_ad_unit_id" />
+    </LinearLayout>
+</com.cuvora.carinfo.helpers.ProgressLinearLayout>

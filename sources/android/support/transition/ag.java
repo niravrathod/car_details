@@ -1,0 +1,101 @@
+package android.support.transition;
+
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.TypeEvaluator;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.RectF;
+import android.view.View;
+import android.view.View.MeasureSpec;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+
+class ag {
+
+    /* renamed from: android.support.transition.ag$a */
+    static class C0267a implements TypeEvaluator<Matrix> {
+        /* renamed from: a */
+        final float[] f991a = new float[9];
+        /* renamed from: b */
+        final float[] f992b = new float[9];
+        /* renamed from: c */
+        final Matrix f993c = new Matrix();
+
+        C0267a() {
+        }
+
+        public /* synthetic */ Object evaluate(float f, Object obj, Object obj2) {
+            return m980a(f, (Matrix) obj, (Matrix) obj2);
+        }
+
+        /* renamed from: a */
+        public Matrix m980a(float f, Matrix matrix, Matrix matrix2) {
+            matrix.getValues(this.f991a);
+            matrix2.getValues(this.f992b);
+            for (matrix = null; matrix < 9; matrix++) {
+                this.f992b[matrix] = this.f991a[matrix] + ((this.f992b[matrix] - this.f991a[matrix]) * f);
+            }
+            this.f993c.setValues(this.f992b);
+            return this.f993c;
+        }
+    }
+
+    /* renamed from: a */
+    static View m983a(ViewGroup viewGroup, View view, View view2) {
+        Matrix matrix = new Matrix();
+        matrix.setTranslate((float) (-view2.getScrollX()), (float) (-view2.getScrollY()));
+        au.m1006a(view, matrix);
+        au.m1008b(viewGroup, matrix);
+        RectF rectF = new RectF(0.0f, 0.0f, (float) view.getWidth(), (float) view.getHeight());
+        matrix.mapRect(rectF);
+        view2 = Math.round(rectF.left);
+        int round = Math.round(rectF.top);
+        int round2 = Math.round(rectF.right);
+        int round3 = Math.round(rectF.bottom);
+        View imageView = new ImageView(view.getContext());
+        imageView.setScaleType(ScaleType.CENTER_CROP);
+        viewGroup = m982a(view, matrix, rectF);
+        if (viewGroup != null) {
+            imageView.setImageBitmap(viewGroup);
+        }
+        imageView.measure(MeasureSpec.makeMeasureSpec(round2 - view2, 1073741824), MeasureSpec.makeMeasureSpec(round3 - round, 1073741824));
+        imageView.layout(view2, round, round2, round3);
+        return imageView;
+    }
+
+    /* renamed from: a */
+    private static Bitmap m982a(View view, Matrix matrix, RectF rectF) {
+        int round = Math.round(rectF.width());
+        int round2 = Math.round(rectF.height());
+        if (round <= 0 || round2 <= 0) {
+            return null;
+        }
+        float min = Math.min(1.0f, 1048576.0f / ((float) (round * round2)));
+        round = (int) (((float) round) * min);
+        round2 = (int) (((float) round2) * min);
+        matrix.postTranslate(-rectF.left, -rectF.top);
+        matrix.postScale(min, min);
+        rectF = Bitmap.createBitmap(round, round2, Config.ARGB_8888);
+        Canvas canvas = new Canvas(rectF);
+        canvas.concat(matrix);
+        view.draw(canvas);
+        return rectF;
+    }
+
+    /* renamed from: a */
+    static Animator m981a(Animator animator, Animator animator2) {
+        if (animator == null) {
+            return animator2;
+        }
+        if (animator2 == null) {
+            return animator;
+        }
+        Animator animatorSet = new AnimatorSet();
+        animatorSet.playTogether(new Animator[]{animator, animator2});
+        return animatorSet;
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@c2101a/white" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout android:id="@c1487a/rl_web_view_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ProgressBar android:id="@c1487a/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <WebView android:id="@c1487a/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@c1487a/ll_error" android:background="@c2101a/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@c2101a/gray_darker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ooops!"/>
+        <ImageView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="150dp" android:src="0x7f0700bf"/>
+        <TextView android:textColor="@c2101a/gray_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="No internet connection found.
+Check your connection."/>
+        <Button android:textColor="@c2101a/white" android:id="@c1487a/btn_try_again" android:background="@drawable/button_rounded_corners" android:paddingLeft="70dp" android:paddingRight="70dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="Try Again"/>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="BANNER" app:adUnitId="@string/push_webview_banner_ad_unit_id"/>
+</LinearLayout>

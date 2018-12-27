@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:id="@+id/carDetailCardView" android:layout_width="fill_parent" android:layout_height="150dp" android:layout_marginBottom="1dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.cuvora.carinfo.views.AsyncImageView android:id="@+id/carListImages" android:layout_width="0dp" android:layout_height="fill_parent" android:src="@drawable/ic_sedan_car_model" android:layout_weight="0.4" />
+        <RelativeLayout android:layout_width="0dp" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <RelativeLayout android:paddingLeft="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:id="@+id/modelNameLabelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/model_name" />
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/modelNameValueTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/modelNameLabelTextView" />
+                <TextView android:id="@+id/avgPriceLabelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ex_showroom_price" android:layout_below="@+id/modelNameValueTextView" />
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/avgPriceValueTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/avgPriceLabelTextView" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

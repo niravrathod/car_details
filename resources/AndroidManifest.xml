@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="99" android:versionName="3.9.1" package="com.cuvora.carinfo" platformBuildVersionCode="99" platformBuildVersionName="3.9.1">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:theme="@c1109e/AppTheme" android:label="@string/app_name" android:icon="0x7f0700b1" android:name="com.cuvora.carinfo.CarInfoApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config">
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.cuvora.carinfo.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="io.fabric.ApiKey" android:value="7ba31333f9bc69dc35b4a696b1588ae9c0a6d76f"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@c2101a/colorAccent"/>
+        <service android:name="com.cuvora.carinfo.service.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.cuvora.carinfo.service.RegistrationIntentService"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.cuvora.carinfo.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.cuvora.carinfo.DeeplinkActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="carinfo"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cuvora.carinfo.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.cuvora.carinfo.VehicleInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="All Registrations" android:name="com.cuvora.carinfo.MultipleVehicleInfoActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.VehicleInfoActivity"/>
+        <activity android:label="Recent Search" android:name="com.cuvora.carinfo.RecentSearchActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.SearchActivity"/>
+        <activity android:label="Recent Search" android:name="com.cuvora.carinfo.TrendingSearchActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:label="About Us" android:name="com.cuvora.carinfo.AboutActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:label="My Garage" android:name="com.cuvora.carinfo.MyGarageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:label="" android:name="com.cuvora.carinfo.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.cuvora.carinfo.SearchActivity"/>
+        <activity android:theme="@c1109e/AppTheme" android:label="@string/title_activity_generic_web_view" android:name="com.cuvora.carinfo.GenericWebViewActivity" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <service android:name="com.cuvora.carinfo.service.StartupService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.cuvora.carinfo.service.ScraperService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.cuvora.carinfo.service.MaydayService" android:enabled="true" android:exported="true"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.SearchResultLoaderActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@c1109e/AppTheme" android:label="@string/title_activity_reverse_search" android:name="com.cuvora.carinfo.ReverseSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:theme="@c1109e/AppTheme" android:label="@string/title_activity_home" android:name="com.cuvora.carinfo.HomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.InstantArticleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:name="com.cuvora.carinfo.VideoActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:theme="@style/AppTheme.BrandsActivityTheme" android:name="com.cuvora.carinfo.CarsBrandsActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.CarListParticularBrandActivity" android:screenOrientation="portrait" android:parentActivityName="com.cuvora.carinfo.CarsBrandsActivity"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.CarVariantPropertiesActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.CarDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@c1109e/AppTheme" android:name="com.cuvora.carinfo.ExitAppSupportActivity" android:excludeFromRecents="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.cuvora.carinfo.SearchErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.cuvora.carinfo.SelectStateCityActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_ootKu6dXq6xUrfWJ18qfbnpeEzgqIXos"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_pjAUy9h8xZtSvj1T68EySggbwyevR0iJ"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <activity android:name="com.cuvora.carinfo.activity.SearchLicenseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@c1109e/AppTheme" android:label="@string/title_activity_home" android:name="com.cuvora.carinfo.activity.HomePageActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <receiver android:name="com.cuvora.carinfo.receivers.UpgradeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_MY_PACKAGE_REPLACED"/>
+                <data android:scheme="package" android:path="com.cuvora.carinfo"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.cuvora.carinfo.activity.LicenseInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.cuvora.carinfo.activity.DemoActivity"/>
+        <activity android:name="com.cuvora.carinfo.activity.LicenseSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme_Transparent" android:name="com.unomer.sdk.UnomerWebActivity"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.cuvora.carinfo.videomodule.ui.activity.VideoHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:parentActivityName="com.cuvora.carinfo.activity.HomePageActivity"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8646722329420776~7776091435"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="com.cuvora.carinfo.crashlyticsinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme_Transparent" android:name="com.karumi.dexter.DexterActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.cuvora.carinfo.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.cuvora.carinfo.mobileadsinitprovider" android:initOrder="100"/>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.cuvora.carinfo.lifecycle-trojan"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="8"/>
+    </application>
+</manifest>

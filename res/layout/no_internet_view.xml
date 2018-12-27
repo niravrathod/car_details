@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/connectivity_imageView" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginBottom="16dp" android:src="@drawable/connectivity" app:layout_constraintBottom_toTopOf="@id/connectivity_heading" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:id="@+id/connectivity_heading" android:layout_marginBottom="16dp" android:text="Something Went Wrong!!" android:maxLines="5" app:layout_constraintBottom_toTopOf="@id/connectivity_description" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/rail_title" />
+    <TextView android:textSize="15sp" android:gravity="center" android:id="@+id/connectivity_description" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="16dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:id="@+id/try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Try Again" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/connectivity_description" />
+</android.support.constraint.ConstraintLayout>

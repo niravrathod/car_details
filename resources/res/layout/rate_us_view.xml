@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" app:cardUseCompatPadding="true" style="@style/AppTheme.CardView">
+    <com.airbnb.lottie.LottieAnimationView android:id="@c1487a/animation_view" android:background="@drawable/back_toolbar_gradient" android:padding="16dp" android:layout_width="match_parent" android:layout_height="135dp" android:scaleType="fitCenter" app:lottie_autoPlay="true" app:lottie_cacheStrategy="2" app:lottie_loop="true" app:lottie_rawRes="@raw/rateus"/>
+</android.support.v7.widget.CardView>

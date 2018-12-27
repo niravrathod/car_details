@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>showPollfishIcon</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>eChallanScraperEnabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>rtoServerDownTitle</key>
+        <value>RTO SERVER DOWN</value>
+    </entry>
+    <entry>
+        <key>shareText</key>
+        <value>Hey! Check out this amazing Car Info app. Gives owner details of all vehicles across
+            India! &lt;br/>https://www.cuvora.com form remote </value>
+    </entry>
+    <entry>
+        <key>webview_incorrect_reg_num_msg</key>
+        <value>does not exist</value>
+    </entry>
+    <entry>
+        <key>webview_otp_field_id</key>
+        <value>form_rcdl:tf_OTP</value>
+    </entry>
+    <entry>
+        <key>webViewOtpFieldVisibleCheckParam</key>
+        <value>Enter OTP</value>
+    </entry>
+    <entry>
+        <key>webview_otp_button_index</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>webview_search_button_index</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>forceUpdateEnable</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>webView_mob_num_field_id</key>
+        <value>form_rcdl:tf_Mobile</value>
+    </entry>
+    <entry>
+        <key>otpGroup</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>webViewSuccessResponseCheckParam</key>
+        <value>Owner</value>
+    </entry>
+    <entry>
+        <key>forceUpdateVersionUpperLimit</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>adsEnable</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>adsVisibleAfterCount</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>webview_url</key>
+        <value>https://parivahan.gov.in/rcdlstatus/?pur_cd=102</value>
+    </entry>
+    <entry>
+        <key>webview_reg_num_field_1_id</key>
+        <value>form_rcdl:tf_reg_no1</value>
+    </entry>
+    <entry>
+        <key>webview_reg_num_field_2_id</key>
+        <value>form_rcdl:tf_reg_no2</value>
+    </entry>
+    <entry>
+        <key>ratingDialogEnable</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>regexSMS</key>
+        <value>(.*)(OTP : )(d+)(.*)(RCDL)(.*)</value>
+    </entry>
+    <entry>
+        <key>js_remove_header_image</key>
+        <value>javascript: var el = document.getElementById('header-logo-section');
+            el.parentNode.removeChild(el); var e1 = document.getElementsByClassName("navbar
+            navbar-default navigation-background")[0];e1.parentNode.removeChild(e1);var e2 =
+            document.getElementById('form_rcdl:captchaPnl'); if (e2) e2.parentNode.removeChild(e2); </value>
+    </entry>
+    <entry>
+        <key>js_remove_t_and_c</key>
+        <value> javascript: var el = document.getElementById('form_rcdl:captchaPnl');
+            el.parentNode.removeChild(el); var e1 = document.getElementsByClassName("navbar
+            navbar-default navigation-background")[0];e1.parentNode.removeChild(e1);var e2 =
+            document.getElementById('form_rcdl:captchaPnl'); if (e2) e2.parentNode.removeChild(e2); </value>
+    </entry>
+    <entry>
+        <key>webViewOtpButton</key>
+        <value>Check status</value>
+    </entry>
+    <entry>
+        <key>webViewSearchButton</key>
+        <value>Check Status</value>
+    </entry>
+    <entry>
+        <key>backgroundWebviewEnable</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>liveVersionCode</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>ratingDialogActionCount</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>ratingDialogDelayTime</key>
+        <value>4000</value>
+    </entry>
+    <entry>
+        <key>scraperVahanSettings</key>
+        <value>{
+            "scrapeRange": 10,
+            "delay": 700,
+            "enabled": true
+            } </value>
+    </entry>
+    <entry>
+        <key>MPaivahanSalt</key>
+        <value>T7v$rWKpu4qBMzuF</value>
+    </entry>
+    <entry>
+        <key>MParivahanSecretKey</key>
+        <value>p9S$dHKjHVmasgFj</value>
+    </entry>
+    <entry>
+        <key>MPaivahanUrl</key>
+        <value>https://mparivahan.com/api/user/rc-detail</value>
+    </entry>
+    <entry>
+        <key>aboutText</key>
+        <value>Want to know it all about the vehicle that was over speeding the other day? or about
+            the one that is always parked blocking your passage ? At Cuvora, we understand your
+            problems and requirements equally and hence here we bring out our car info app to
+            resolve your vehicle details queries with just a click. All you have to do is enter the
+            vehicle number you want to know about and we will provide you with the information you
+            need. So, now you know whom to catch for that rash driving :) </value>
+    </entry>
+    <entry>
+        <key>interstitialSettings</key>
+        <value>{
+            "activated": true,
+            "minimumActionCount": 4
+            } </value>
+    </entry>
+    <entry>
+        <key>shareTextSubject</key>
+        <value>Get complete car info from its number plate!!</value>
+    </entry>
+    <entry>
+        <key>reverseSearchEnable</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>showExitAd</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>sms_search_response_contains</key>
+        <value>Owner:</value>
+    </entry>
+    <entry>
+        <key>smsText</key>
+        <value>VAHAN</value>
+    </entry>
+    <entry>
+        <key>smsRecipient</key>
+        <value>7738299899</value>
+    </entry>
+    <entry>
+        <key>reverseSearchMinLength</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>spread_the_quote_url</key>
+        <value>http://spreadthequote.com/countryswebservices/get-info</value>
+    </entry>
+    <entry>
+        <key>smsSenderText</key>
+        <value>VAAHAN</value>
+    </entry>
+    <entry>
+        <key>smsTimeout</key>
+        <value>80000l</value>
+    </entry>
+    <entry>
+        <key>maxPollingCount</key>
+        <value>10</value>
+    </entry>
+    <entry>
+        <key>webviewMultipleRecordsError</key>
+        <value>This vehicle has multiple active records</value>
+    </entry>
+    <entry>
+        <key>searchScreenLoaderWaitTime</key>
+        <value>6000</value>
+    </entry>
+    <entry>
+        <key>rateUsOption</key>
+        <value>{
+            "title": "Rate Us",
+            "message": "If you like the DESIGN of CarInfo, would you like to rate us on PlayStore?",
+            "affirmativeButtonTitle": "YES",
+            "negativeButtonTitle": "No",
+            "showLotte": true
+            } </value>
+    </entry>
+    <entry>
+        <key>rewardedVideoSubData</key>
+        <value>{
+            "desc": "Watch a 30 second video and get Ad-Free experience for %1$d days.",
+            "validity": "30",
+            "cta" : "Watch Now"
+            } </value>
+    </entry>
+    <entry>
+        <key>inAppProducts</key>
+        <value> {
+            "go_ad_free":
+            [
+            {
+            "productId": "sub.ad.free",
+            "productDesc": "Get 6 months ad free subscription for just Rs. 10",
+            "productCta": "Pay Now",
+            "price": "10",
+            "baseProductId": "sub.ad.free"
+            }
+            ]
+            } </value>
+    </entry>
+    <entry>
+        <key>dlUrlIdentifier</key>
+        <value>https://parivahan.gov.in/rcdlstatus/?pur_cd=101</value>
+    </entry>
+    <entry>
+        <key>dlFieldIdentifier</key>
+        <value>form_rcdl:tf_dlNO</value>
+    </entry>
+    <entry>
+        <key>dlDobIdentifier</key>
+        <value>form_rcdl:tf_dob_input</value>
+    </entry>
+    <entry>
+        <key>dlSubmitIdentifier</key>
+        <value>check status</value>
+    </entry>
+    <entry>
+        <key>dlNumberDoesNotExistIdentifier</key>
+        <value>check status</value>
+    </entry>
+    <entry>
+        <key>dlSearchSuccessParam</key>
+        <value>Holder's Name</value>
+    </entry>
+    <entry>
+        <key>dlTemplateData</key>
+        <value> {"dob":"dd-mm-yyyy","dobSep":"-","url":"https://parivahan.gov.in/rcdlstatus/?pur_cd=101","dlFieldIdentifier":"form_rcdl:tf_dlNO","dlDobIdentifier":"form_rcdl:tf_dob_input","dlSubmitIdentifier":"check
+            status","dlNumberDoesNotExistIdentifier":"No DL Details
+            Found","uiErrorMessage":"ui-messages-error-summary","dlSearchSuccessParam":"Holder's
+            Name"} </value>
+    </entry>
+    <entry>
+        <key>showHairStrand</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>userBucketSize</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>hairStrandThreshold</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>ratingPopupTexts</key>
+        <value>[
+            "Accurate vehicle registration information",
+            "Great look and feel of the app",
+            "All in one app for vehicle information"
+            ] </value>
+    </entry>
+    <entry>
+        <key>unomer</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>locationPermissionRetry</key>
+        <value>3</value>
+    </entry>
+</defaultsMap>

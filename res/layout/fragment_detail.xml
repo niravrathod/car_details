@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:padding="0dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0dp" app:contentInsetEnd="0dp" app:contentInsetStart="0dp" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <fragment android:name="com.cuvora.carinfo.videomodule.ui.fragment.ContentDetailFragment" android:id="@+id/contentDetailFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="16sp" android:textColor="@color/title_color" android:gravity="center_vertical" android:id="@+id/tvListHeader" android:background="#FCFCFC" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="50dp" android:text="Up next" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/video_description" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <fragment android:name="com.cuvora.carinfo.videomodule.ui.fragment.RelatedListFragment" android:id="@+id/relatedListFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <com.cuvora.carinfo.videomodule.ui.view.BannerAdView android:layout_gravity="bottom" android:id="@+id/bannerAdView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

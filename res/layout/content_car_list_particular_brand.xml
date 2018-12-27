@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" progressActivity:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:progressActivity="http://schemas.android.com/apk/res-auto">
+    <com.cuvora.carinfo.helpers.ProgressRelativeLayout android:id="@+id/progressActivity" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" progressActivity:errorButtonBackgroundColor="@color/colorPrimary" progressActivity:loadingBackgroundColor="#FFFFFF" progressActivity:loadingProgressBarColor="@color/colorPrimary">
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_brands" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </com.cuvora.carinfo.helpers.ProgressRelativeLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:background="@color/transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content" progressActivity:adSize="BANNER" progressActivity:adUnitId="@string/car_models_screen_banner_ad_unit_id" />
+</LinearLayout>

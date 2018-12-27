@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="@dimen/recent_search_cell_width" android:layout_height="wrap_content" android:layout_marginStart="8dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView android:background="@drawable/gradient_featured_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@+id/tv_heading" android:layout_alignBottom="@+id/tv_heading" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_smallest" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_heading" android:padding="6dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="2dp" />
+</RelativeLayout>

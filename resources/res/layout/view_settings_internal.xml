@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/button_rounded_corners" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:textColor="@c2101a/white" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Force Show Ads" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <android.support.v7.widget.SwitchCompat android:id="@c1487a/switch_show_ads" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <View android:id="@c1487a/sep1" android:background="@c2101a/white" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintTop_toBottomOf="@c1487a/switch_show_ads"/>
+            <android.support.v7.widget.AppCompatButton android:id="@c1487a/applyBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Apply" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@c1487a/sep1"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

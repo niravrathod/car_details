@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.cuvora.carinfo.helpers.ProgressRelativeLayout android:id="@c1487a/progressActivity" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:errorButtonBackgroundColor="@c2101a/colorPrimary" app:loadingBackgroundColor="#ffffff" app:loadingProgressBarColor="@c2101a/colorPrimary">
+        <android.support.v7.widget.RecyclerView android:id="@c1487a/rv_brands" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.cuvora.carinfo.helpers.ProgressRelativeLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adView" android:background="@color/transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="BANNER" app:adUnitId="@string/car_models_screen_banner_ad_unit_id"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.cuvora.carinfo.views.AsyncImageView android:id="@c1487a/iv_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f0700ec" android:scaleType="fitXY"/>
+    <TextView android:textSize="14sp" android:textColor="@color/app_text_dark_black_color" android:ellipsize="end" android:id="@c1487a/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:maxLines="2"/>
+    <TextView android:textSize="12sp" android:textColor="@color/app_text_light_black_color" android:ellipsize="end" android:id="@c1487a/tv_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="12dp" android:maxLines="1"/>
+</LinearLayout>

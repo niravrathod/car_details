@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" app:startDestination="@c1487a/homeFragment">
+    <fragment android:label="HomeFragment" android:name="com.cuvora.carinfo.videomodule.ui.fragment.HomeFragment" android:id="@c1487a/homeFragment">
+        <action android:id="@c1487a/action_homeFragment_to_listingFragment" app:destination="@c1487a/listingFragment" app:popEnterAnim="@anim/slide_in_right" app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment android:label="SeeAllFragment" android:name="com.cuvora.carinfo.videomodule.ui.fragment.SeeAllFragment" android:id="@c1487a/listingFragment"/>
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@c1487a/loader_con" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders android:id="@c1487a/cfl_progress" android:layout_width="220dp" android:layout_height="220dp" android:layout_margin="10dp" android:src="0x7f0700b3" app:cfl_border="true" app:cfl_border_width="5dp" app:cfl_wave_amplitude="0.04" app:cfl_wave_color="?attr/colorAccent"/>
+        <TextView android:textSize="20sp" android:textColor="?attr/colorAccent" android:id="@c1487a/tv_loader_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/loader_text1"/>
+        <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_smart_ad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@c1487a/webViewCon" android:background="@c2101a/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:theme="@style/CustomTheme.Toolbar"/>
+        <com.cuvora.carinfo.views.ScrapeView android:id="@c1487a/scrapeView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adViewInner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="BANNER" app:adUnitId="@string/webview_banner_ad_unit_id"/>
+    </LinearLayout>
+</FrameLayout>

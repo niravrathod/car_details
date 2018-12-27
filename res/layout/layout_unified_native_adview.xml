@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.gms.ads.formats.UnifiedNativeAdView android:id="@+id/unified_native_adview" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.gms.ads.formats.MediaView android:id="@+id/media_view" android:layout_width="fill_parent" android:layout_height="175dp" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="12sp" android:textColor="@color/white" android:background="@color/app_blue_translucent" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ad" />
+            <RelativeLayout android:gravity="center_vertical" android:padding="8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/media_view">
+                <android.support.v7.widget.AppCompatImageView android:id="@+id/iv_app_icon" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="4dp" android:layout_toStartOf="@+id/tv_cta" android:layout_toEndOf="@+id/iv_app_icon">
+                    <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textColor="@color/app_text_dark_black_color" android:ellipsize="end" android:id="@+id/tv_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    <android.support.v7.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/app_text_light_black_color" android:ellipsize="end" android:id="@+id/tv_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/tv_cta" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.gms.ads.formats.UnifiedNativeAdView>
+    <android.support.v7.widget.AppCompatImageView android:id="@+id/ivDistractView" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_hair" android:layout_alignBottom="@+id/unified_native_adview" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

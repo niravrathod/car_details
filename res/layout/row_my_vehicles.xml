@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView android:id="@+id/cv_vehicle1" android:visibility="gone" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginLeft="@dimen/padding_my_garage" android:layout_marginBottom="@dimen/padding_my_garage" android:layout_alignParentLeft="true" style="@style/AppTheme.CardView">
+        <RelativeLayout android:layout_gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_logo1" android:background="@drawable/ic_oval_placeholder" android:layout_width="65dp" android:layout_height="65dp" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/iv_logo1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_recent_search_car" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_vehicle_number1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fbhbhefd   dssv    sd vdsv" android:layout_below="@+id/rl_logo1" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-light" />
+            <TextView android:textSize="12dp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_owner_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="ndjkbwcswj wefw fwwf wfef " android:maxLines="2" android:layout_below="@+id/tv_vehicle_number1" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:id="@+id/cv_vehicle2" android:visibility="gone" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginRight="@dimen/padding_my_garage" android:layout_marginBottom="@dimen/padding_my_garage" android:layout_alignParentRight="true" style="@style/AppTheme.CardView">
+        <RelativeLayout android:layout_gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_logo2" android:background="@drawable/ic_oval_placeholder" android:layout_width="65dp" android:layout_height="65dp" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/iv_logo2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_recent_search_car" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_vehicle_number2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fbhbhefd hjgh ghu" android:layout_below="@+id/rl_logo2" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-light" />
+            <TextView android:textSize="12dp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_owner_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="ndjkbwwj gug ghguy " android:maxLines="2" android:layout_below="@+id/tv_vehicle_number2" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView android:id="@+id/cv_add_more_vehicle" android:padding="10dp" android:visibility="gone" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginRight="@dimen/padding_my_garage" android:layout_marginBottom="@dimen/padding_my_garage" android:layout_alignParentRight="true" style="@style/AppTheme.CardView">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.support.design.widget.FloatingActionButton android:layout_gravity="center" android:id="@+id/fab_add_vehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fab_add" />
+            <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_vehicle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Add more vehicles" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

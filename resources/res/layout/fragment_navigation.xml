@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@c1487a/root" android:background="@c2101a/colorAccent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:gravity="center" android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@c1487a/ivHeader" android:layout_width="192dp" android:layout_height="192dp"/>
+    </LinearLayout>
+    <ScrollView android:layout_gravity="bottom" android:scrollbars="none" android:fadingEdgeLength="70dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:overScrollMode="never" android:requiresFadingEdge="vertical">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+            <include android:id="@c1487a/menu_rate" layout="@layout/layout_side_menu_row"/>
+            <include android:id="@c1487a/menu_share" layout="@layout/layout_side_menu_row"/>
+            <include android:id="@c1487a/menu_feedback" layout="@layout/layout_side_menu_row"/>
+            <include android:id="@c1487a/menu_about" layout="@layout/layout_side_menu_row"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

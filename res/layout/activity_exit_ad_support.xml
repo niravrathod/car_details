@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_loader_logo" />
+    <TextView android:textSize="20sp" android:textColor="@color/gray_darker" android:layout_gravity="center_horizontal" android:id="@+id/tv_text_line1" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exit_screen_text" android:textAlignment="center" />
+    <TextView android:textSize="26sp" android:textColor="@color/gray_darker" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_app_name" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:textAlignment="center" />
+</LinearLayout>

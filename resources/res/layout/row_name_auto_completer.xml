@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="4dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="14sp" android:textColor="@color/app_text_dark_black_color" android:ellipsize="end" android:id="@c1487a/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHUCHITA SACHDEV ffw" android:maxLines="1" android:maxLength="20" android:drawableLeft="0x7f0700c5" android:drawablePadding="8dp" android:layout_weight="1"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+            <TextView android:textSize="12sp" android:textColor="@color/app_text_dark_black_color" android:ellipsize="end" android:id="@c1487a/tv_state_name" android:background="@drawable/drawable_grey_oval" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:maxLines="1"/>
+            <ImageView android:id="@c1487a/iv_seen" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_check"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/app_text_light_black_color" android:ellipsize="end" android:id="@c1487a/tv_detail_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="6dp" android:maxLines="1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/app_text_light_black_color" android:ellipsize="end" android:id="@c1487a/tv_section_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/recent_searches" android:maxLines="1" android:textAllCaps="true"/>
+</LinearLayout>

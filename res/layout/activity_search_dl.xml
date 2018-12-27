@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="#eae9e9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="#eae9e9" android:layout_width="fill_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStartWithNavigation="0dp" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:navigationIcon="?attr/homeAsUpIndicator" app:theme="@style/Dark.Toolbar"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <fragment android:name="com.cuvora.carinfo.fragment.SearchLicenceFragment" android:id="@+id/fragmentTop" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_marginBottom="12dp" android:layout_weight="1" />
+                    <fragment android:name="com.cuvora.carinfo.fragment.SectionsFragment" android:id="@+id/fragmentBottom" android:layout_width="fill_parent" android:layout_height="170dp" />
+                    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/licence_home"
+                      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@+id/scrapeViewCon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.cuvora.carinfo.views.CustomLoaderScreen android:id="@+id/customLoader" android:background="@color/white" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

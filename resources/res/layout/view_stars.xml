@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RatingBar android:layout_gravity="center" android:id="@c1487a/ratingBar" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" android:rating="5" android:stepSize="1"/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#212121" android:id="@c1487a/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp"/>
+    <TextView android:textSize="18sp" android:textColor="#212121" android:id="@c1487a/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:layout_marginRight="15dp"/>
+</LinearLayout>

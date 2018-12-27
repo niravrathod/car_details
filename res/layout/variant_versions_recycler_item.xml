@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="vertical" android:id="@+id/versionsCardViewVariantActivity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/variant_act_margin" android:layout_marginBottom="@dimen/variant_act_margin" android:layout_marginStart="@dimen/variant_act_margin" android:layout_marginEnd="@dimen/variant_act_margin" app:cardCornerRadius="5dp" app:cardElevation="2dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/cars_card_views_gradiant" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="22sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/versionNameVariantsData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/variant_act_margin" android:paddingEnd="@dimen/variant_act_margin" android:layout_toStartOf="@+id/priceVariantsData" android:layout_alignParentStart="true" />
+        <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/priceVariantsData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/versionNameVariantsData" android:layout_marginStart="@dimen/variant_act_margin" android:layout_toStartOf="@+id/ivRedirect" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:layout_marginStart="@dimen/variant_act_margin" android:layout_toStartOf="@+id/ivRedirect">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transmission" />
+                <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/transmissionVariantsData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fuel Type" />
+                <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/fuelVariantsData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Engine Disp." />
+                <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/engineDisplacementVariantsData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="1987 cc" android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/ivRedirect" android:padding="8dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_right_arrow_angle" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

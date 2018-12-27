@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cuvora.carinfo.helpers.ProgressLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@c1487a/progressActivity" android:layout_width="match_parent" android:layout_height="match_parent" app:errorButtonBackgroundColor="@c2101a/colorPrimary" app:loadingBackgroundColor="#ffffff" app:loadingProgressBarColor="@c2101a/colorPrimary">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@c1487a/appBarLayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/cmp_toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView android:id="@c1487a/carBrandsRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="SMART_BANNER" app:adUnitId="@string/car_brands_screen_banner_ad_unit_id"/>
+    </LinearLayout>
+</com.cuvora.carinfo.helpers.ProgressLinearLayout>

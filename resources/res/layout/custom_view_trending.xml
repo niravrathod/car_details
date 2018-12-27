@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout android:id="@c1487a/rv_icon" android:layout_width="88dp" android:layout_height="88dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.cuvora.carinfo.views.AsyncImageView android:id="@c1487a/iv_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="2dp" android:layout_marginTop="-2dp" android:src="@drawable/ic_pic_circle" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="0x7f0700a4"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/app_text_light_black_color" android:gravity="center" android:id="@c1487a/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="John Abrahan dbsjkf" android:layout_below="@c1487a/rv_icon" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

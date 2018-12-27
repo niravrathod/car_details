@@ -1,0 +1,16 @@
+https://mparivahan.com/api/user/rc-detail
+
+ajax =>
+
+        c2989a.m14608a(C1541e.m5852a("MPaivahanUrl"));
+        c2989a.m14617b("Auth-Token", a.m4a()); //need to get
+        c2989a.m14617b("Content-Type", "application/json");
+        c2989a.m14617b("Accept", "application/json");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("");
+        stringBuilder.append(a.m7b().toString().getBytes().length);
+        c2989a.m14617b("Content-Length", stringBuilder.toString());
+        c2989a.m14617b("Content-Language", "en-US");
+        c2989a.m14617b("Source-Name", "mParivahan");
+        c2989a.m14617b("Host", "mparivahan.com");
+        c2989a.m14617b("Content-Encoding", "gzip");

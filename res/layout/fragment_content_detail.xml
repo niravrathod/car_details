@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/tv_video_title" android:paddingTop="12dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:paddingStart="16dp" app:layout_constraintEnd_toStartOf="@+id/ivShare" app:layout_constraintStart_toStartOf="parent" />
+        <android.support.v7.widget.AppCompatImageView android:id="@+id/ivShare" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/tv_video_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/tv_video_title" app:srcCompat="@drawable/ic_share" />
+        <TextView android:textSize="12sp" android:id="@+id/video_artist" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/tv_video_title" app:layout_constraintTop_toBottomOf="@id/tv_video_title" />
+        <FrameLayout android:id="@+id/video_detail_card" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/video_artist">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#939393" android:gravity="center" android:id="@+id/videoViews" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2.2 M" android:drawablePadding="12dp" android:layout_weight="1" android:alpha="0.7" />
+                <TextView android:textSize="12sp" android:textColor="#939393" android:gravity="center" android:id="@+id/videoLikes" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="32 k" android:drawablePadding="12dp" android:layout_weight="1" android:alpha="0.7" />
+                <TextView android:textSize="12sp" android:textColor="#939393" android:gravity="center" android:id="@+id/videoDislikes" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="324" android:drawablePadding="12dp" android:layout_weight="1" android:alpha="0.7" />
+                <TextView android:textSize="12sp" android:textColor="#939393" android:gravity="center" android:id="@+id/share" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="SHARE" android:drawablePadding="12dp" android:layout_weight="1" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="13sp" android:id="@+id/video_description" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/video_detail_card" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

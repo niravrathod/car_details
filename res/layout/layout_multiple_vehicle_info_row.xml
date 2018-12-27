@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="right" android:id="@+id/tv_key" android:layout_width="0dp" android:layout_height="wrap_content" android:text="key" android:layout_weight="1" />
+    <TextView android:id="@+id/tv_colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" : " android:layout_centerHorizontal="true" />
+    <TextView android:id="@+id/tv_value" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="value" android:layout_weight="2" />
+</LinearLayout>

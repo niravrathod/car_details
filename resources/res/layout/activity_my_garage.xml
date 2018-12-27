@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/cmp_toolbar"/>
+    <ScrollView android:id="@c1487a/sv_garage" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="@c2101a/gray_light_2" android:padding="10dp" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/details"/>
+            <android.support.v7.widget.CardView android:id="@c1487a/cv_user_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_my_garage" style="@style/AppTheme.CardView">
+                <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_user_info" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@c1487a/til_name" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputEditText android:id="@c1487a/et_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" android:maxLines="1"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout android:id="@c1487a/til_email" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputEditText android:id="@c1487a/et_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email id" android:maxLines="1" android:inputType="textEmailAddress"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18dp" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="+91"/>
+                        <android.support.design.widget.TextInputLayout android:id="@c1487a/til_mobile" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <android.support.design.widget.TextInputEditText android:id="@c1487a/et_mobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Mobile" android:maxLines="1" android:maxLength="10" android:layout_weight="1" android:inputType="number"/>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_my_garage_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <TextView android:id="@c1487a/tv_my_garage_text" android:background="@c2101a/gray_light_2" android:padding="10dp" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/my_garage_vehicles"/>
+                <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_my_garage" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@c1487a/ll_recent_search_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <TextView android:id="@c1487a/tv_recent_search_text" android:background="@c2101a/gray_light_2" android:padding="10dp" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_searches_menu"/>
+                <LinearLayout android:orientation="vertical" android:id="@c1487a/lv_recent_searches" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@c1487a/rl_placeholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+                <TextView android:textSize="@dimen/text_size_medium_1" android:gravity="center" android:layout_gravity="center" android:id="@c1487a/tv_placeholder" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recent_search_placholder"/>
+                <TextView android:textSize="16sp" android:textColor="?attr/colorPrimary" android:layout_gravity="center" android:id="@c1487a/tv_launch_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="@string/search_now"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.AppCompatButton android:textSize="18dp" android:textColor="@c2101a/white" android:id="@c1487a/btn_update" android:background="@c2101a/colorPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="UPDATE" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

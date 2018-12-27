@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:attr/selectableItemBackground" style="@style/AppTheme.CardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cuvora.carinfo.views.AsyncImageView android:id="@+id/iv_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</android.support.v7.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@c1487a/et_num" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:hint="@string/ten_digits" android:maxLength="10" android:layout_weight="1" android:inputType="number">
+            <requestFocus/>
+        </EditText>
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@c1487a/iv_help" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="0x7f0700ab"/>
+    </LinearLayout>
+    <TextView android:textColor="@c2101a/colorPrimaryDark" android:id="@c1487a/tv_mobile_help" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="25dp" android:text="@string/mobile_help"/>
+</LinearLayout>

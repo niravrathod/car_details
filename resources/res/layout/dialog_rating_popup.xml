@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:textSize="22sp" android:textStyle="bold" android:textColor="@c2101a/white" android:gravity="center" android:background="@c2101a/colorPrimary" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loving_carinfo" android:textAllCaps="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="24dp" android:layout_marginRight="12dp" android:layout_marginBottom="24dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_correct"/>
+                <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textColor="@color/app_text_dark_black_color" android:gravity="center_vertical" android:id="@c1487a/tv_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/review_app_message1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <android.support.v7.widget.AppCompatImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_paint"/>
+                <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textColor="@color/app_text_dark_black_color" android:gravity="center_vertical" android:id="@c1487a/tv_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/review_app_message2"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <android.support.v7.widget.AppCompatImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/ic_speaker"/>
+                <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textColor="@color/app_text_dark_black_color" android:gravity="center_vertical" android:id="@c1487a/tv_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/review_app_message3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/border_grey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@c1487a/rl_rating_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:layout_weight="0.3">
+                <LinearLayout android:gravity="center_vertical" android:id="@c1487a/ll_rating_no" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_sad"/>
+                    <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/app_text_dark_black_color" android:gravity="center" android:id="@c1487a/tv_no" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_no_text"/>
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/app_text_dark_black_color" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_feedback_text"/>
+            </LinearLayout>
+            <View android:background="@color/border_grey" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@c1487a/rl_rating_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:layout_weight="0.7">
+                <LinearLayout android:gravity="center_vertical" android:id="@c1487a/ll_rating_yes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_smiling"/>
+                    <android.support.v7.widget.AppCompatTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/app_text_dark_black_color" android:gravity="center" android:id="@c1487a/tv_yes" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_yes_text"/>
+                </LinearLayout>
+                <android.support.v7.widget.AppCompatTextView android:textSize="14sp" android:textColor="@color/app_text_dark_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_affirmative_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

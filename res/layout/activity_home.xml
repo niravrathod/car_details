@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@+id/toolbar" layout="@layout/cmp_toolbar" />
+            <com.cuvora.carinfo.views.MyScrollView android:id="@+id/sv_content" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never">
+                <LinearLayout android:orientation="vertical" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_home_bottom" />
+                </LinearLayout>
+            </com.cuvora.carinfo.views.MyScrollView>
+            <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@+id/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/homepage_banner_ad_unit_id" />
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/view_ad_free_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.cuvora.carinfo.views.AdFreeOptionsView android:id="@+id/adFreeOptionView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <android.support.design.widget.NavigationView android:layout_gravity="start" android:id="@+id/nav_view" android:background="@drawable/side_nav_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:gravity="center" android:orientation="vertical" android:background="@color/transparent_background" android:paddingTop="30dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_logo_cuvora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo_cuvora" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_cuvora_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/ic_carinfo" android:scaleType="fitXY" android:scaleX="1.2" />
+            </LinearLayout>
+            <ScrollView android:layout_gravity="bottom" android:scrollbars="none" android:fadingEdgeLength="70dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:overScrollMode="never" android:requiresFadingEdge="vertical">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+                    <include android:id="@+id/menu_garage" layout="@layout/layout_side_menu_row" />
+                    <include android:id="@+id/menuAdFree" layout="@layout/layout_side_menu_row" />
+                    <include android:id="@+id/menu_rate" android:visibility="gone" layout="@layout/layout_side_menu_row" />
+                    <include android:id="@+id/menu_share" layout="@layout/layout_side_menu_row" />
+                    <include android:id="@+id/menu_feedback" layout="@layout/layout_side_menu_row" />
+                    <include android:id="@+id/menu_about" layout="@layout/layout_side_menu_row" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

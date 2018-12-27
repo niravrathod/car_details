@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/app_screen_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/adView">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:padding="8dp" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llPlaceholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+                    <TextView android:textSize="@dimen/text_size_medium_1" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_placeholder" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent_search_placholder" />
+                    <TextView android:textSize="16sp" android:textColor="?attr/colorPrimary" android:layout_gravity="center" android:id="@+id/tvSearchNow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="@string/search_now" />
+                </LinearLayout>
+                <include android:id="@+id/layoutContact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" layout="@layout/layout_contact_us" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <android.support.v7.widget.AppCompatButton android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/btnUpdate" android:background="@color/colorPrimary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50dp" android:text="UPDATE" android:layout_alignParentBottom="true" />
+        <com.google.android.gms.ads.AdView android:layout_gravity="bottom|center" android:id="@+id/adView" android:background="@color/transparent_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" ads:adSize="SMART_BANNER" ads:adUnitId="@string/homepage_banner_ad_unit_id" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

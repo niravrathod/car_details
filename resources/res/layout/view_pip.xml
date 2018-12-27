@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cuvora.carinfo.videomodule.ui.view.PIPRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@c1487a/dragViewCon" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@c1487a/detailView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="200dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@c1487a/dragView" android:layout_width="match_parent" android:layout_height="200dp"/>
+</com.cuvora.carinfo.videomodule.ui.view.PIPRelativeLayout>

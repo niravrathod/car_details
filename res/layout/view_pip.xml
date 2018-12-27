@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cuvora.carinfo.videomodule.ui.view.PIPRelativeLayout android:id="@+id/dragViewCon" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/detailView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="200dp" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@+id/dragView" android:layout_width="fill_parent" android:layout_height="200dp" />
+</com.cuvora.carinfo.videomodule.ui.view.PIPRelativeLayout>

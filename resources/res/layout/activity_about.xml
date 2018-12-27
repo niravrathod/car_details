@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/cmp_toolbar"/>
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" style="@style/AppTheme.CardView">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@c1487a/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="0x7f0700b4"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@c1487a/iv_logo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="0x7f0700a2" android:tint="@color/black"/>
+                <WebView android:textSize="@dimen/text_size_small_2" android:textColor="@color/black" android:id="@c1487a/wv_about" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/about_text" android:layout_weight="1"/>
+                <TextView android:textColor="?attr/colorPrimary" android:gravity="center" android:layout_gravity="bottom" android:id="@c1487a/tv_tnc" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@c2102b/tnc_link"/>
+                <TextView android:textSize="@dimen/text_size_small_1" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@c1487a/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

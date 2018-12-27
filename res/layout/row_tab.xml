@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cuvora.carinfo.views.AsyncImageView android:id="@+id/ivTab" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="4dp" android:src="@drawable/back" />
+    <android.support.v7.widget.AppCompatTextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvTAb" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Matches" android:maxLines="1" android:minLines="1" android:textAllCaps="true" app:autoSizeMaxTextSize="18sp" app:autoSizeMinTextSize="5sp" app:autoSizeTextType="uniform" />
+</LinearLayout>

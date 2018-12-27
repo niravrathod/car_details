@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout android:background="@c2101a/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@c1487a/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@c1487a/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?attr/colorPrimary" app:layout_scrollFlags="3">
+                <com.cuvora.carinfo.views.AsyncImageView android:id="@c1487a/iv_news_image" android:background="@c2101a/gray_light_2" android:layout_width="match_parent" android:layout_height="210dp" android:scaleType="centerCrop" android:transitionName="news" app:layout_collapseMode="2"/>
+                <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="50dp" android:elevation="4dp" app:layout_collapseMode="1" app:navigationIcon="?attr/homeAsUpIndicator" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/content_instant_article"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <com.google.android.gms.ads.AdView android:layout_gravity="center_horizontal" android:id="@c1487a/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="SMART_BANNER" app:adUnitId="@string/instant_article_banner_ad_unit_id"/>
+</LinearLayout>

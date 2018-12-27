@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="220dp" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:layout_marginEnd="4dp" style="@style/AppTheme.CardView">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp">
+            <com.cuvora.carinfo.views.AsyncImageView android:id="@c1487a/iv_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            <ImageView android:layout_gravity="center" android:layout_width="50dp" android:layout_height="40dp" android:src="0x7f0700dd" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+            <TextView android:textSize="10sp" android:textColor="@c2101a/white" android:id="@c1487a/tv_subtitle" android:background="@color/black" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="12dp" android:src="@drawable/gradient_white" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/app_text_dark_black_color" android:id="@c1487a/tv_heading" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

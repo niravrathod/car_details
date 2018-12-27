@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="12dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textColor="@color/app_text_dark_black_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="18dp" android:text="@string/contact_carinfo_message" />
+    <EditText android:id="@+id/et_message" android:background="@drawable/background_round_theme" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="4" />
+    <LinearLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/tv_cancel" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="@string/cancel" android:textAllCaps="true" android:layout_marginEnd="12dp" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/tv_ok" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:text="@string/ok_text" android:layout_marginEnd="12dp" />
+    </LinearLayout>
+</LinearLayout>
